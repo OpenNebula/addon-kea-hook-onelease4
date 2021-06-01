@@ -8,7 +8,7 @@ Documentation for Kea and hooks:
 
 ## Kea ONElease4 Hook
 
-### Version: `1.1.0`
+### Version: `1.1.1`
 
 This is quite a simple hook to assign ONE lease for a client based on its HW (MAC) address. It will work properly only if clients have HW addresses generated in a particular way: **the last four bytes represent an IPv4 address**
 
@@ -61,7 +61,7 @@ To enable and use this hook - insert similar json under `hooks-libraries` in you
 "hooks-libraries": [
     ...
     {
-        "library": "/opt/kea/lib/kea/hooks/libkea-onelease-dhcp4.so",
+        "library": "/usr/lib/kea/hooks/libkea-onelease-dhcp4.so",
         "parameters": {
             "enabled": true,
             "byte-prefix": "00:02",
@@ -79,7 +79,7 @@ To enable and use this hook - insert similar json under `hooks-libraries` in you
 
 ```
 {
-    "library": "/opt/kea/lib/kea/hooks/libkea-onelease-dhcp4.so"
+    "library": "/usr/lib/kea/hooks/libkea-onelease-dhcp4.so"
 }
 ```
 
